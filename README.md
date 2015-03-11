@@ -1,3 +1,4 @@
+#usblinky
 Shine on!
 
 usblinky is a small usbstick that drives digitally addressable ledstrips.

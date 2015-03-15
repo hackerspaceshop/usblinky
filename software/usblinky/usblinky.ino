@@ -111,7 +111,7 @@ const uint8_t STATE_STARTUP=100;
 
 
 // current program runnig start_up() changes this to the last known state from eeprom
-uint8_t RUNTIME_STATE = STATE_RAINBOW;
+uint8_t RUNTIME_STATE = STATE_RAINBOW_UP;
 
 
 

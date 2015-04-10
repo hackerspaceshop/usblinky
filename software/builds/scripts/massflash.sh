@@ -15,7 +15,7 @@ avrdude -c usbtiny  -p attiny85 -U lfuse:w:0xe1:m -U hfuse:w:0xdd:m -U efuse:w:0
 fail=false;
 
 #//flash
-(avrdude -v  -c usbtiny  -p attiny85 -U flash:w:$file:r -B 3 -s -u ) && say "OK" || fail=true;
+(avrdude -v  -c usbtiny  -p attiny85 -U flash:w:$file:r -B 3 -s -u ) || fail=true;
 
 
 if $fail;
@@ -28,7 +28,7 @@ fi;
 #//lock
 avrdude -c usbtiny  -p attiny85 -U lock:w:0x2f:m
 
-say "next";
+say "OK! next";
 sleep 1;
 }
 
